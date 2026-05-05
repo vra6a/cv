@@ -1,1 +1,1 @@
-export type ButtonIcon = 'cv';
+export type ButtonIcon = 'cv' | 'linkedin';
