@@ -1,2 +1,7 @@
-// wrangler.jsonc
-"name": "damp-fire-d677",
+{
+  "name": "damp-fire-d677",
+  "compatibility_date": "2026-05-05",
+  "assets": {
+    "directory": "./dist/adamvarga/browser",
+  },
+}
