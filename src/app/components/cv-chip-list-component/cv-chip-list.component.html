@@ -1,0 +1,22 @@
+<div class="chip-list__container">
+  @for (technology of visibleList(); track technology.value) {
+    @if (technology.value === 'more') {
+      <button
+        type="button"
+        class="chip-list__chip chip-list__button"
+        [attr.aria-label]="'CHIP_LIST.A11Y.SHOW_MORE__TEXT'"
+        (click)="showMore()"
+      >
+        <span class="chip-list__chip-label">
+          {{ technology.label }}
+        </span>
+      </button>
+    } @else {
+      <span class="chip-list__chip" [attr.aria-label]="technology.label">
+        <span class="chip-list__chip-label">
+          {{ technology.label }}
+        </span>
+      </span>
+    }
+  }
+</div>

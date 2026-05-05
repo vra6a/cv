@@ -1,0 +1,31 @@
+@use "../../styles/tokens/breakpoints" as app-breakpoints;
+@use "../../styles/mixins/text";
+
+.chip-list__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing-component-3);
+}
+
+.chip-list__chip {
+  align-items: center;
+  background-color: var(--background);
+  border-radius: var(--border-radius-4);
+  color: var(--primary);
+  display: inline-flex;
+  gap: var(--spacing-component-1);
+  padding: var(--spacing-component-1) var(--spacing-component-3);
+  text-align: center;
+
+  @include text.button-small;
+}
+
+.chip-list__chip-label {
+  display: inline-block;
+}
+
+.chip-list__button {
+  border: none;
+  cursor: pointer;
+}

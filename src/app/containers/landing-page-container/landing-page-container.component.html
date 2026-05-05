@@ -1,0 +1,165 @@
+<cv-hero-component></cv-hero-component>
+<section class="landing-page__section" id="projects" aria-labelledby="projects-title">
+  <h2 class="landing-page__section-title" id="projects-title">
+    {{ 'PROJECTS.SECTION__TITLE' | translate }}
+  </h2>
+  @for (project of projectList; track project.url) {
+    <cv-card-component
+      [image]="project.imageUrl"
+      [imageAlt]="'PROJECTS.PHYSIONOW.A11Y.IMAGE_ALT__TEXT' | translate"
+      class="landing-page__card"
+    >
+      <h3 slot="title-slot" class="landing-page__card-title">{{ project.title | translate }}</h3>
+
+      <div slot="content-slot">
+        @for (descriptionParagraph of project.shortDescription; track descriptionParagraph) {
+          <p class="landing-page__content">{{ descriptionParagraph | translate }}</p>
+        }
+        <cv-chip-list-component
+          class="landing-page__chip-list"
+          [aria-label]="'PROJECTS.A11Y.TECHNOLOGY_USED__TEXT' | translate"
+          [technologyList]="project.stack"
+        ></cv-chip-list-component>
+      </div>
+      <!--
+      <div slot="action-slot" class="landing-page__card-actions">
+        <cv-button
+          variant="primary"
+          size="small"
+          type="standard"
+          [route]="`projects/${project.url}`"
+          [label]="'Megnézem' | translate"
+          [ariaLabel]="'Megnézem' | translate"
+        />
+      </div>
+      -->
+    </cv-card-component>
+  }
+</section>
+<section class="landing-page__section" aria-labelledby="experience-title">
+  <h2 class="landing-page__section-title" id="experience-title">
+    {{ 'WORK_EXPERIENCE.SECTION__TITLE' | translate }}
+  </h2>
+  @for (experience of experienceList; track experience) {
+    <cv-card-component class="landing-page__card">
+      <h3 slot="title-slot" class="landing-page__card-title">
+        {{ experience.workplace | translate }}
+      </h3>
+
+      <div slot="content-slot">
+        <!--<p class="landing-page__content-light-bold">{{ experience.duration }}</p>-->
+        @for (role of experience.roles; track role) {
+          <section aria-labelledby="role-title">
+            <h4 class="landing-page__role-title" id="role-title">
+              {{ role.roleName | translate }}
+            </h4>
+            <p class="landing-page__content-light-bold">
+              {{ role.startDate | date: 'yyyy.MM' }} -
+              {{ role.endDate ? (role.endDate | date: 'yyyy.MM') : ('COMMON.PRESENT' | translate) }}
+              ·
+              {{ role.duration }}
+            </p>
+            @for (descriptionParagraph of role.description; track descriptionParagraph) {
+              <p class="landing-page__content landing-page__indent">
+                {{ descriptionParagraph | translate }}
+              </p>
+            }
+          </section>
+        }
+        <cv-chip-list-component
+          class="landing-page__chip-list"
+          [aria-label]="'PROJECTS.A11Y.TECHNOLOGY_USED__TEXT' | translate"
+          [technologyList]="experience.stack"
+        ></cv-chip-list-component>
+      </div>
+    </cv-card-component>
+  }
+</section>
+<section class="landing-page__section" id="about" aria-labelledby="about-me-title">
+  <h2 class="landing-page__section-title" id="about-me-title">
+    {{ 'ABOUT_ME.SECTION__TITLE' | translate }}
+  </h2>
+  <p class="landing-page__content">{{ 'ABOUT_ME.TEXT' | translate }}</p>
+</section>
+<section class="landing-page__section" aria-labelledby="education-title">
+  <h2 class="landing-page__section-title" id="education-title">
+    {{ 'EDUCATION.SECTION__TITLE' | translate }}
+  </h2>
+  @for (education of educationList; track education) {
+    <cv-card-component class="landing-page__card">
+      <h3 slot="title-slot" class="landing-page__card-title">{{ education.school | translate }}</h3>
+
+      <div slot="content-slot">
+        <p class="landing-page__role-title">
+          {{ education.degree | translate }}, {{ education.fieldOfStudy | translate }}
+        </p>
+        <p class="landing-page__content-light-bold">
+          {{ education.startDate }} - {{ education.endDate }}
+        </p>
+        @for (descriptionParagraph of education.description; track descriptionParagraph) {
+          <p class="landing-page__content landing-page__indent">
+            {{ descriptionParagraph | translate }}
+          </p>
+        }
+      </div>
+    </cv-card-component>
+  }
+</section>
+<section class="landing-page__section" aria-labelledby="other-activities-title">
+  <h2 class="landing-page__section-title" id="other-activities-title">
+    {{ 'ACTIVITIES.SECTION__TITLE' | translate }}
+  </h2>
+  @for (activity of activityList; track activity) {
+    <cv-card-component class="landing-page__card">
+      <h3 slot="title-slot" class="landing-page__card-title">{{ activity.label | translate }}</h3>
+
+      <div slot="content-slot">
+        <p class="landing-page__content-light-bold">
+          {{ activity.startDate | date: 'yyyy.MM'
+          }}{{ activity.endDate ? ` - ${(activity.endDate | date: 'yyyy.MM')}` : '' }}
+        </p>
+        @for (descriptionParagraph of activity.description; track descriptionParagraph) {
+          <p class="landing-page__content landing-page__indent">
+            {{ descriptionParagraph | translate }}
+          </p>
+        }
+      </div>
+    </cv-card-component>
+  }
+</section>
+<section class="landing-page__section" id="contact" aria-labelledby="contact-title">
+  <h2 class="landing-page__section-title" id="contact-title">
+    {{ 'CONTACT.SECTION__TITLE' | translate }}
+  </h2>
+
+  <address class="landing-page__content">
+    <p class="landing-page__card-title">
+      {{ 'CONTACT.EMAIL_ADDRESS__TITLE' | translate }}
+    </p>
+
+    <ul class="landing-page__indent landing-page__ul">
+      <li>
+        <a class="landing-page__email-link" href="mailto:varga.99.adam@gmail.com">
+          varga.99.adam@gmail.com
+        </a>
+      </li>
+      <li>
+        <a class="landing-page__email-link" href="mailto:hello@adamvarga.hu">
+          hello@adamvarga.hu
+        </a>
+      </li>
+    </ul>
+
+    <p class="landing-page__card-title">{{ 'CONTACT.LINKEDIN__TITLE' | translate }}</p>
+
+    <cv-button
+      class="landing-page__button-spacer"
+      variant="primary"
+      size="small"
+      type="standard"
+      href="https://www.linkedin.com/in/adam-varga-3a0391212/"
+      [label]="'COMMON.CHECK_OUT__BUTTON' | translate"
+      [ariaLabel]="'CONTACT.A11Y.OPEN_LINKEDIN' | translate"
+    />
+  </address>
+</section>

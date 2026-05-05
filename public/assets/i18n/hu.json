@@ -1,0 +1,143 @@
+{
+  "NAVBAR": {
+    "PROJECTS__TEXT": "Projektek",
+    "ABOUT__TEXT": "Rólam",
+    "CONTACT__TEXT": "Kapcsolat",
+    "NAME__TEXT": "Varga Ádám",
+
+    "A11Y": {
+      "PRIMARY_NAVIGATION__LABEL": "Elsődleges navigáció",
+      "HOME__LABEL": "Ugrás a kezdőlapra",
+      "TOGGLE_MENU__TEXT": "Navigációs menü megnyitása vagy bezárása",
+      "THEME_SWITCH_TO_LIGHT__TEXT": "Váltás világos módra",
+      "THEME_SWITCH_TO_DARK__TEXT": "Váltás sötét módra",
+      "LANGUAGE_SWITCH_TO_EN__TEXT": "Nyelv váltása angolra",
+      "LANGUAGE_SWITCH_TO_HU__TEXT": "Nyelv váltása magyarra"
+    }
+  },
+  "HERO": {
+    "TITLE__TEXT": "Varga Ádám",
+    "DESCRIPTION__TEXT": "Rövid bemutatkozás...",
+    "DOWNLOAD_CV__TEXT": "Önéletrajz letöltése",
+    "CONTACT__TEXT": "Kapcsolat",
+    "A11Y": {
+      "ACTIONS__LABEL": "Fő műveletek",
+      "DOWNLOAD_CV__LABEL": "Varga Ádám önéletrajzának letöltése PDF formátumban",
+      "CONTACT__LABEL": "Ugrás a kapcsolat oldalra"
+    }
+  },
+  "PROJECTS": {
+    "SECTION__TITLE": "Projektek",
+    "PHYSIONOW": {
+      "TITLE": "PhysioNow rendelő weboldal és időpontfoglaló rendszer fejlesztése",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "Full-stack időpontfoglaló rendszer fejlesztése Angular, Hono.js, SQLite (D1) és Cloudflare Workers használatával.",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Admin felület kialakítása dolgozói beosztások, időpontok és páciensek kezelésére.",
+      "DESCRIPTION_PARAGRAPH_3__TEXT": "AWS alapú e-mail értesítések integrálása a foglalási folyamatokhoz.",
+      "A11Y": {
+        "IMAGE_ALT__TEXT": "PhysioNow weboldal előnézete"
+      }
+    },
+    "MULTITENANT_IDEATOR": {
+      "TITLE": "Multitenant ötletkezelő platform",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "Full-stack multitenant ötletkezelő platform fejlesztése Angular és Spring Boot (Kotlin) használatával.",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Strukturált workflow-k kialakítása az ötletek életciklusának kezelésére (létrehozás, értékelés, lezárás).",
+      "DESCRIPTION_PARAGRAPH_3__TEXT": "Multitenant SaaS architektúra tervezése és megvalósítása role-based jogosultságkezeléssel",
+      "DESCRIPTION_PARAGRAPH_4__TEXT": "Több szervezet biztonságos, elkülönített használatának biztosítása.",
+      "A11Y": {
+        "IMAGE_ALT__TEXT": "Multitenant ötletkezelő platform előnézete"
+      }
+    },
+
+    "A11Y": {
+      "TECHNOLOGY_USED__TEXT": "Felhasznált technológiák"
+    }
+  },
+  "ACTIVITIES": {
+    "SECTION__TITLE": "Egyéb tevékenységek",
+    "CRAFT_HACK": {
+      "TITLE": "CraftHack 2021 - Fődíj",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "Első helyezés nemzetközi hackathonon (EPAM UI challenge).",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Mobil platform koncepció tervezése, amely összekapcsolja a remote és irodai munkavégzést."
+    },
+    "SIMONYI_KONF": {
+      "TITLE": "Arculati felelős @ XVIII. Simonyi Konferencia",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "A XVIII. Simonyi Konferencia grafikai tervezését vezettem, koordinálva a csapat munkáját heti megbeszéléseken, ahol nyomon követtük a haladást, kezeltük az akadályokat és biztosítottuk a határidők betartását.",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Felelősségeim közé tartozott a többi csapatvezetővel való kapcsolattartás a rendezvény szervezése során, a PR vezetővel való egyeztetés a grafikai anyagokról, valamint a feladatok kiosztása a csapattagok között."
+    },
+    "SCHDESIGN": {
+      "TITLE": "Vektor grafika mentor @ Schönherz Design Studio",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "Egy éven keresztül Vector Graphics mentorként támogattam új grafikai projektek megvalósítását, ötletekkel és szakmai tanácsokkal segítve a csapattagokat.",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Emellett interjúztattam a jelentkezőket, és segítettem őket a felvételi projektjük befejezésében, valamint a schdesign közösségbe való bekerülésben."
+    }
+  },
+  "EDUCATION": {
+    "SECTION__TITLE": "Tanulmányok",
+    "MASTER": {
+      "SCHOOL__TEXT": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
+      "DEGREE__TEXT": "Mesterszak",
+      "FIELD_OF_STUDY__TEXT": "Alkalmazott informatika specializáció"
+    },
+    "BACHELOR": {
+      "SCHOOL__TEXT": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
+      "DEGREE__TEXT": "Alapszak",
+      "FIELD_OF_STUDY__TEXT": "Mérnökinformatika"
+    }
+  },
+  "WORK_EXPERIENCE": {
+    "SECTION__TITLE": "Munkatapasztalat",
+    "TELEKOM": {
+      "TITLE": "Magyar Telekom Nyrt.",
+      "ROLES": {
+        "ENGINEER": {
+          "TITLE": "Software Engineer",
+          "DESCRIPTION_PARAGRAPH_1__TEXT": "Nagy terhelésű értesítési rendszer fejlesztése és üzemeltetése (SMS, e-mail, push) Spring Boot (Kotlin) stackkel.",
+          "DESCRIPTION_PARAGRAPH_2__TEXT": "Angular alapú frontend fejlesztés, webshop UI frissítések megvalósítása új design system alapján.",
+          "DESCRIPTION_PARAGRAPH_3__TEXT": "Ügyfél önkiszolgáló funkciók fejlesztése (számlakezelés, jogosultságok, előfizetések) Angular és RxJS használatával."
+        }
+      }
+    },
+    "EN_CO": {
+      "TITLE": "EN-CO Software Zrt.",
+      "ROLES": {
+        "ENGINEER": {
+          "TITLE": "Front-end Developer",
+          "DESCRIPTION_PARAGRAPH_1__TEXT": "Nagy méretű, évek óta élesben működő állami webalkalmazás fejlesztése és karbantartása Angular, RxJS és Angular Material stackkel; új funkciók fejlesztése, ügyféligények kezelése és hibajavítás komplex, adatvezérelt rendszerben."
+        }
+      }
+    }
+  },
+  "ABOUT_ME": {
+    "SECTION__TITLE": "Magamról",
+    "TEXT": "Szoftvermérnök vagyok, több éves tapasztalattal nagy terhelésű backend rendszerek és modern Angular alkalmazások fejlesztésében. Dolgoztam magas forgalmú rendszereken és ügyféloldali funkciókon is. Kiemelten figyelek a clean architecture-re, a karbantartható kódra és a gyakorlatban is jól működő megoldásokra. Fontos számomra a felhasználói élmény, ezért a UI/UX részletekre is nagy hangsúlyt fektetek."
+  },
+  "CHIP_LIST": {
+    "A11Y": {
+      "SHOW_MORE__TEXT": "További technológiák megjelenítése"
+    }
+  },
+  "COMMON": {
+    "LANGUAGE__TEXT": "Nyelv",
+    "PRESENT": "jelenleg",
+    "CHECK_OUT__BUTTON": "Megnézem"
+  },
+  "FOOTER": {
+    "COPYRIGHT_NOTICE": "© {{currentYear}} Varga Ádám. Minden jog fenntartva.",
+    "A11Y": {
+      "JUMP_TO_TOP": "Ugrás az oldal tetejére"
+    }
+  },
+  "CONTACT": {
+    "SECTION__TITLE": "Kapcsolat",
+    "EMAIL_ADDRESS__TITLE": "E-mail cím",
+    "LINKEDIN__TITLE": "LinkedIn",
+    "A11Y": {
+      "OPEN_LINKEDIN": "LinkedIn profil megnyitása új lapon"
+    }
+  },
+  "ROUTES": {
+    "LANDING__TITLE": "Varga Ádám",
+    "ABOUT__TITLE": "Rólam | Varga Ádám",
+    "CONTACT__TITLE": "Kapcsolat | Varga Ádám",
+    "PROJECTS__TITLE": "Projektek | Varga Ádám"
+  }
+}

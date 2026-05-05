@@ -1,0 +1,34 @@
+$app-s: 480px;
+$app-m: 768px;
+$app-l: 1024px;
+$app-xl: 1280px;
+
+@mixin up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin app-s {
+  @media (min-width: $app-s) {
+    @content;
+  }
+}
+
+@mixin app-m {
+  @media (min-width: $app-m) {
+    @content;
+  }
+}
+
+@mixin app-l {
+  @media (min-width: $app-l) {
+    @content;
+  }
+}
+
+@mixin app-xl {
+  @media (min-width: $app-xl) {
+    @content;
+  }
+}

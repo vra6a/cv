@@ -1,0 +1,67 @@
+@mixin hero {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-hero);
+  line-height: var(--line-height-hero);
+  font-weight: var(--font-weight-hero);
+  color: var(--primary);
+}
+
+@mixin title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  font-weight: var(--font-weight-title);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+@mixin subtitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-subtitle);
+  line-height: var(--line-height-subtitle);
+  font-weight: var(--font-weight-subtitle);
+  color: var(--primary);
+  margin: 0;
+}
+
+@mixin button-small {
+  font-family: var(font-family-base);
+  font-size: var(--font-size-button-small);
+  line-height: var(--line-height-button-small);
+  font-weight: var(--font-weight-button-small);
+}
+
+@mixin button-large {
+  font-family: var(font-family-base);
+  font-size: var(--font-size-button-large);
+  line-height: var(--line-height-button-large);
+  font-weight: var(--font-weight-button-large);
+}
+
+@mixin body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: var(--font-weight-body);
+  color: var(--primary);
+  margin: 0;
+}
+
+@mixin body-light {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: var(--font-weight-body-bold);
+  color: var(--primary-light);
+  margin: 0;
+}
+
+@mixin small {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: var(--font-weight-small);
+  color: var(--primary);
+}

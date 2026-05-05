@@ -1,0 +1,45 @@
+:root {
+  --primary: #121212;
+  --primary-light: #3a3a3a;
+  --secondary: #e9e9e9;
+
+  --background: #f7f9fa;
+  --accent: #ff6b6b;
+
+  --primary-hover: #2a2a2a;
+  --secondary-hover: #d6d6d6;
+  --background-hover: #edeff1;
+  --accent-hover: #e85c5c;
+
+  --basic-text: #e5e7eb;
+  --muted-text: #94a3b8;
+  --surface: #111827;
+  --surface-2: #1f2937;
+  --border: #334155;
+
+  --nav-background: #121212;
+  --nav-text: #f7f9fa;
+}
+
+[data-theme="dark"] {
+  --primary: #f7f9fa;
+  --primary-light: #c6c9cc;
+  --secondary: #1e1e1e;
+
+  --background: #121212;
+  --accent: #ff6b6b;
+
+  --primary-hover: #e5e7eb;
+  --secondary-hover: #334155;
+  --background-hover: #1e1e1e;
+  --accent-hover: #e85c5c;
+
+  --basic-text: #e5e7eb;
+  --muted-text: #94a3b8;
+  --surface: #111827;
+  --surface-2: #1f2937;
+  --border: #334155;
+
+  --nav-background: #121212;
+  --nav-text: #f7f9fa;
+}

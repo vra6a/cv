@@ -1,0 +1,143 @@
+{
+  "NAVBAR": {
+    "PROJECTS__TEXT": "Projects",
+    "ABOUT__TEXT": "About",
+    "CONTACT__TEXT": "Contact",
+    "NAME__TEXT": "Adam Varga",
+
+    "A11Y": {
+      "PRIMARY_NAVIGATION__LABEL": "Primary navigation",
+      "HOME__LABEL": "Go to home page",
+      "TOGGLE_MENU__TEXT": "Toggle navigation menu",
+      "THEME_SWITCH_TO_LIGHT__TEXT": "Switch to light mode",
+      "THEME_SWITCH_TO_DARK__TEXT": "Switch to dark mode",
+      "LANGUAGE_SWITCH_TO_EN__TEXT": "Switch language to English",
+      "LANGUAGE_SWITCH_TO_HU__TEXT": "Switch language to Hungarian"
+    }
+  },
+  "HERO": {
+    "TITLE__TEXT": "Adam Varga",
+    "DESCRIPTION__TEXT": "Some introduction...",
+    "DOWNLOAD_CV__TEXT": "Download CV",
+    "CONTACT__TEXT": "Contact me",
+    "A11Y": {
+      "ACTIONS__LABEL": "Main profile actions",
+      "DOWNLOAD_CV__LABEL": "Download Adam Varga's CV as a PDF",
+      "CONTACT__LABEL": "Go to the contact page"
+    }
+  },
+  "PROJECTS": {
+    "SECTION__TITLE": "Projects",
+    "PHYSIONOW": {
+      "TITLE": "PhysioNow clinic website and booking system development",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "Built a full-stack appointment booking system with Angular, Hono.js, SQLite (D1), and Cloudflare Workers.",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Implemented admin panel for managing employee schedules, appointments, and patient data.",
+      "DESCRIPTION_PARAGRAPH_3__TEXT": "Integrated AWS-based email notifications for booking workflows.",
+      "A11Y": {
+        "IMAGE_ALT__TEXT": "Preview of the PhysioNow webpage"
+      }
+    },
+    "MULTITENANT_IDEATOR": {
+      "TITLE": "Multitenant Ideation Platform",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "Built a full-stack multitenant ideation platform using Angular and Spring Boot (Kotlin).",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Implemented structured workflows for idea lifecycle management (creation, evaluation, completion).",
+      "DESCRIPTION_PARAGRAPH_3__TEXT": "Designed a multitenant SaaS architecture with role-based access control.",
+      "DESCRIPTION_PARAGRAPH_4__TEXT": "Enabled secure, isolated environments for multiple organizations.",
+      "A11Y": {
+        "IMAGE_ALT__TEXT": "Preview of the Multitenant Ideation Platform"
+      }
+    },
+
+    "A11Y": {
+      "TECHNOLOGY_USED__TEXT": "Technologies used"
+    }
+  },
+  "ACTIVITIES": {
+    "SECTION__TITLE": "Other activities",
+    "CRAFT_HACK": {
+      "TITLE": "CraftHack 2021 Grand Winner",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "Won first place in an international hackathon (UI challenge by EPAM)",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Designed a mobile platform concept connecting remote and office employees"
+    },
+    "SIMONYI_KONF": {
+      "TITLE": "Lead Graphic Designer @ XVIII. Simonyi Konferencia",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "I led the graphic design for the XVIII Simonyi Conference, coordinating the team’s work through weekly meetings where we tracked progress, addressed blockers, and ensured deadlines were met.",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "My responsibilities included communicating with other team leads during event planning, aligning with the Head of PR on visual materials, and assigning tasks to team members."
+    },
+    "SCHDESIGN": {
+      "TITLE": "Vector Graphics Mentor @ Schönherz Design Studio",
+      "DESCRIPTION_PARAGRAPH_1__TEXT": "For one year, I supported new graphic design projects as a Vector Graphics mentor, helping team members with ideas and technical guidance.",
+      "DESCRIPTION_PARAGRAPH_2__TEXT": "Additionally, I conducted interviews and assisted applicants in completing their admission projects and joining the schdesign community."
+    }
+  },
+  "EDUCATION": {
+    "SECTION__TITLE": "Education",
+    "MASTER": {
+      "SCHOOL__TEXT": "Budapest University of Technology and Economics",
+      "DEGREE__TEXT": "Master's degree",
+      "FIELD_OF_STUDY__TEXT": "Specialization in Applied Computer Science"
+    },
+    "BACHELOR": {
+      "SCHOOL__TEXT": "Budapest University of Technology and Economics",
+      "DEGREE__TEXT": "Bachelor's degree",
+      "FIELD_OF_STUDY__TEXT": "Computer Software Engineering"
+    }
+  },
+  "WORK_EXPERIENCE": {
+    "SECTION__TITLE": "Work Experience",
+    "TELEKOM": {
+      "TITLE": "Magyar Telekom Nyrt.",
+      "ROLES": {
+        "ENGINEER": {
+          "TITLE": "Software Engineer",
+          "DESCRIPTION_PARAGRAPH_1__TEXT": "Developed and maintained a high-volume notification engine handling SMS, email, and push notifications for Telekom Hungary using Spring Boot (Kotlin).",
+          "DESCRIPTION_PARAGRAPH_2__TEXT": "Contributed to frontend development with Angular, including implementing UI updates for the Telekom webshop based on a new design system and component library.",
+          "DESCRIPTION_PARAGRAPH_3__TEXT": "Developing customer self-service features (billing, permissions, subscription management) using Angular and RxJS."
+        }
+      }
+    },
+    "EN_CO": {
+      "TITLE": "EN-CO Software Zrt.",
+      "ROLES": {
+        "ENGINEER": {
+          "TITLE": "Front-end Developer",
+          "DESCRIPTION_PARAGRAPH_1__TEXT": "Developed and maintained a large-scale government web application (5+ years in production) for accounting, project financing, and data management using Angular, RxJS, and Angular Material, delivering new features, handling client change requests, and resolving bugs in complex, data-driven interfaces."
+        }
+      }
+    }
+  },
+  "ABOUT_ME": {
+    "SECTION__TITLE": "About Me",
+    "TEXT": "Software Engineer with experience building large-scale backend systems and modern Angular applications. Experienced in high-volume systems and customer-facing features, with a strong focus on clean architecture, maintainable code, practical solutions and attention to detail in UI and user experience."
+  },
+  "CHIP_LIST": {
+    "A11Y": {
+      "SHOW_MORE__TEXT": "Show more technologies"
+    }
+  },
+  "COMMON": {
+    "LANGUAGE__TEXT": "Language",
+    "PRESENT": "Present",
+    "CHECK_OUT__BUTTON": "Learn more"
+  },
+  "FOOTER": {
+    "COPYRIGHT_NOTICE": "© {{currentYear}} Varga Ádám. All rights reserved.",
+    "A11Y": {
+      "JUMP_TO_TOP": "Back to top of the page"
+    }
+  },
+  "CONTACT": {
+    "SECTION__TITLE": "Contact",
+    "EMAIL_ADDRESS__TITLE": "E-mail address",
+    "LINKEDIN__TITLE": "LinkedIn",
+    "A11Y": {
+      "OPEN_LINKEDIN": "Open LinkedIn profile in a new tab"
+    }
+  },
+  "ROUTES": {
+    "LANDING__TITLE": "Adam Varga",
+    "ABOUT__TITLE": "About Me | Adam Varga",
+    "CONTACT__TITLE": "Contact | Adam Varga",
+    "PROJECTS__TITLE": "Projects | Adam Varga"
+  }
+}

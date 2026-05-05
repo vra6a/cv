@@ -1,0 +1,41 @@
+<main id="main-content" class="project-detail" tabindex="-1">
+  <nav class="project-detail__nav" aria-label="Project navigation">
+    <a routerLink="/" class="project-detail__back-link" aria-label="Back to homepage">
+      <span class="project-detail__back-icon" aria-hidden="true">←</span>
+      <span class="project-detail__back-text">
+        {{ 'PROJECT.BACK__TEXT' | translate }}
+      </span>
+    </a>
+  </nav>
+  @if (!projectData()) {
+    <section class="project-detail__hero" aria-labelledby="project-title">
+      <p>nem talalhato ilyen project!</p>
+    </section>
+  } @else {
+    <section class="project-detail__hero" aria-labelledby="project-title">
+      <img
+        class="project-detail__image"
+        [src]="projectData()?.imageUrl"
+        [alt]="'asd'"
+        width="1200"
+        height="600"
+      />
+    </section>
+    <article class="project-detail__content">
+      <header class="project-detail__header">
+        <h1 id="project-title" class="project-detail__title">
+          {{ projectData()?.title }}
+        </h1>
+      </header>
+      <section class="project-detail__meta" aria-labelledby="project-meta-title">
+        <h2 id="project-meta-title" class="visually-hidden">Project details</h2>
+
+        <strong>{{ 'PROJECT.TECH__TEXT' | translate }}:</strong>
+        <span>todo tech stack list component</span>
+      </section>
+      <section class="project-detail__description" aria-labelledby="project-description-title">
+        <p>long texts</p>
+      </section>
+    </article>
+  }
+</main>

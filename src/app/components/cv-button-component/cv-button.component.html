@@ -1,0 +1,50 @@
+@if (route()) {
+  <a
+    [class]="buttonClasses().join(' ')"
+    [routerLink]="route()"
+    [attr.aria-label]="accessibleLabel()"
+    [attr.title]="title() ?? accessibleLabel()"
+    (click)="handleClick($event)"
+  >
+    <ng-container [ngTemplateOutlet]="content" />
+  </a>
+} @else if (href()) {
+  <a
+    [class]="buttonClasses().join(' ')"
+    [href]="href()"
+    [attr.download]="download() || null"
+    [attr.target]="isExternal() ? '_blank' : null"
+    [attr.rel]="isExternal() ? 'noopener noreferrer' : null"
+    [attr.aria-label]="accessibleLabel()"
+    [attr.title]="title() ?? accessibleLabel()"
+    (click)="handleClick($event)"
+  >
+    <ng-container [ngTemplateOutlet]="content" />
+  </a>
+} @else {
+  <button
+    [class]="buttonClasses().join(' ')"
+    type="button"
+    [attr.aria-label]="accessibleLabel()"
+    [attr.title]="title() ?? accessibleLabel()"
+    (click)="handleClick($event)"
+  >
+    <ng-container [ngTemplateOutlet]="content" />
+  </button>
+}
+
+<ng-template #content>
+  @if (iconUrl()) {
+    <span class="cv-button__icon" aria-hidden="true" [style.--button-icon-url]="iconUrl()"></span>
+  }
+
+  @if (type() === 'iconOnly') {
+    <span class="cv-button__label cv-button__label--visually-hidden">
+      {{ label() }}
+    </span>
+  } @else {
+    <span class="cv-button__label">
+      {{ label() }}
+    </span>
+  }
+</ng-template>

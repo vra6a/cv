@@ -1,0 +1,77 @@
+@use "../../styles/tokens/breakpoints" as app-breakpoints;
+@use "../../styles/mixins/text";
+
+.cv-card {
+  background-color: var(--secondary);
+  border-radius: var(--border-radius-3);
+  padding: var(--spacing-component-6);
+
+  display: grid;
+  gap: var(--spacing-component-4);
+}
+
+.cv-card__title {
+  min-block-size: 1.5rem;
+}
+
+.cv-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-component-4);
+}
+
+.cv-card__content {
+  inline-size: 100%;
+}
+
+.cv-card__image {
+  inline-size: min(100%, 20rem);
+  max-inline-size: 100%;
+  block-size: auto;
+
+  display: block;
+  object-fit: contain;
+  border-radius: var(--border-radius-3);
+}
+
+.cv-card__actions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--spacing-component-2);
+  justify-content: center;
+  min-block-size: 2.5rem;
+
+  &:empty {
+    display: none;
+  }
+}
+
+@include app-breakpoints.app-l {
+  .cv-card {
+    grid-template-rows: auto 1fr auto;
+    padding-right: var(--spacing-component-9);
+  }
+
+  .cv-card__body {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cv-card__content {
+    flex: 1;
+  }
+
+  .cv-card__image {
+    inline-size: 12rem;
+    block-size: 12rem;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .cv-card__actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

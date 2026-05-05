@@ -1,0 +1,38 @@
+<section class="hero" aria-labelledby="hero-title">
+  <header class="hero__image-welcome-text-container">
+    <img
+      class="hero__image"
+      src="images/me.png"
+      alt=""
+      width="100"
+      height="100"
+      aria-hidden="true"
+    />
+
+    <h1 class="hero__welcome-text" id="hero-title">
+      {{ 'HERO.TITLE__TEXT' | translate }}
+    </h1>
+  </header>
+
+  <nav class="hero__actions" [attr.aria-label]="'HERO.A11Y.ACTIONS__LABEL' | translate">
+    <cv-button
+      variant="primary"
+      size="large"
+      type="standard"
+      [href]="'#contact'"
+      [label]="'HERO.CONTACT__TEXT' | translate"
+      [ariaLabel]="'HERO.A11Y.CONTACT__LABEL' | translate"
+    />
+
+    <cv-button
+      variant="secondary"
+      size="large"
+      icon="cv"
+      type="standard"
+      [href]="cvHref()"
+      [download]="cvDownloadName()"
+      [label]="'HERO.DOWNLOAD_CV__TEXT' | translate"
+      [ariaLabel]="'HERO.A11Y.DOWNLOAD_CV__LABEL' | translate"
+    />
+  </nav>
+</section>

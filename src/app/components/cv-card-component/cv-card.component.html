@@ -1,0 +1,19 @@
+<article class="cv-card">
+  <header class="cv-card__title">
+    <ng-content select="[slot='title-slot']"></ng-content>
+  </header>
+
+  <div class="cv-card__body">
+    <div class="cv-card__content">
+      <ng-content select="[slot='content-slot']"></ng-content>
+    </div>
+
+    @if (image()) {
+      <img class="cv-card__image" [src]="image()" [alt]="imageAlt()" />
+    }
+  </div>
+
+  <footer class="cv-card__actions">
+    <ng-content select="[slot='action-slot']"></ng-content>
+  </footer>
+</article>

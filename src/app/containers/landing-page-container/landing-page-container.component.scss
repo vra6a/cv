@@ -1,0 +1,126 @@
+@use "../../styles/tokens/breakpoints" as app-breakpoints;
+@use "../../styles/mixins/text";
+
+:host {
+  display: block;
+  background-color: var(--background);
+}
+
+.landing-page__section {
+  inline-size: 100%;
+  padding-inline: var(--spacing-component-4);
+  padding-top: var(--spacing-layout-5);
+  margin-top: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-layout-2);
+
+  scroll-margin-top: 8rem;
+
+  .landing-page__section-title {
+    @include text.title;
+    margin-top: var(--spacing-layout-2);
+  }
+}
+
+.landing-page__button-spacer {
+  margin-top: var(--spacing-layout-2);
+}
+
+.landing-page__card-title {
+  @include text.subtitle;
+  font-style: normal;
+  margin: 0;
+}
+
+.landing-page__chip-list {
+  display: block;
+  margin-top: var(--spacing-component-5);
+}
+
+.landing-page__content {
+  @include text.body;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  block-size: 100%;
+  margin-top: var(--spacing-component-1);
+}
+
+.landing-page__indent {
+  margin-left: var(--spacing-component-3);
+}
+
+.landing-page__content-light-bold {
+  @include text.body-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  block-size: 100%;
+}
+
+.landing-page__role-title {
+  @include text.body;
+  font-weight: 700;
+  margin-top: var(--spacing-component-4);
+  margin-bottom: var(--spacing-component-1);
+}
+
+.landing-page__card-actions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-component-5);
+}
+
+.landing-page__ul {
+  list-style: none;
+}
+
+.landing-page__email-link {
+  @include text.body;
+
+  margin-bottom: var(--spacing-component-3);
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+}
+
+@include app-breakpoints.app-s {
+  .landing-page__section {
+    padding-inline: var(--spacing-component-5);
+  }
+}
+
+@include app-breakpoints.app-l {
+  .landing-page__section {
+    inline-size: 80%;
+    margin-inline: auto;
+    padding-inline: var(--spacing-component-8);
+    padding-right: 160px;
+  }
+
+  .landing-page__card-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .landing-page__content {
+    align-items: flex-start;
+  }
+
+  .landing-page__card {
+    margin-left: var(--spacing-layout-2);
+  }
+}
+
+@include app-breakpoints.app-xl {
+  .landing-page__section {
+    max-inline-size: var(--max-width);
+    padding-inline: var(--spacing-component-8);
+    padding-right: 300px;
+  }
+}

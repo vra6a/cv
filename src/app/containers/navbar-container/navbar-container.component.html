@@ -1,0 +1,79 @@
+<header class="navbar__header">
+  <nav class="navbar__nav" [attr.aria-label]="'NAVBAR.A11Y.PRIMARY_NAVIGATION__LABEL' | translate">
+    <a
+      class="navbar__image-name"
+      routerLink="/"
+      [attr.aria-label]="'NAVBAR.A11Y.HOME__LABEL' | translate"
+      (click)="scrollToTop($event)"
+    >
+      <img class="navbar__image" src="images/me.png" alt="" width="44" height="44" />
+      <span class="navbar__name">{{ 'NAVBAR.NAME__TEXT' | translate }}</span>
+    </a>
+
+    <button
+      class="navbar__toggle"
+      type="button"
+      [attr.aria-expanded]="isMenuOpen()"
+      aria-controls="primary-navigation"
+      [attr.aria-label]="'NAVBAR.A11Y.TOGGLE_MENU__TEXT' | translate"
+      (click)="toggleMenu()"
+    >
+      <span class="navbar__toggle-bar" aria-hidden="true"></span>
+      <span class="navbar__toggle-bar" aria-hidden="true"></span>
+      <span class="navbar__toggle-bar" aria-hidden="true"></span>
+    </button>
+
+    <ul
+      id="primary-navigation"
+      class="navbar__list"
+      [class.navbar__list--open]="isMenuOpen()"
+      [attr.hidden]="!isMenuOpen() ? true : null"
+    >
+      @for (item of navItems; track item.fragment) {
+        <li class="navbar__item">
+          <a
+            class="navbar__link"
+            [href]="'#' + item.fragment"
+            [class.navbar__link--active]="activeFragment() === item.fragment"
+            [attr.aria-current]="activeFragment() === item.fragment ? 'location' : null"
+            (click)="scrollToSection($event, item.fragment)"
+          >
+            {{ item.label | translate }}
+          </a>
+        </li>
+      }
+
+      <li class="navbar__item navbar__item--theme">
+        <button
+          class="navbar__theme-toggle"
+          type="button"
+          [attr.aria-label]="themeToggleLabel() | translate"
+          [attr.title]="themeToggleLabel() | translate"
+          (click)="themeService.toggleTheme(); closeMenu()"
+        >
+          <img
+            class="navbar__theme-icon"
+            [src]="themeService.toggleIconSrc()"
+            alt=""
+            width="20"
+            height="20"
+          />
+        </button>
+      </li>
+
+      <li class="navbar__item navbar__item--language">
+        <button
+          class="navbar__language-toggle"
+          type="button"
+          [attr.aria-label]="languageToggleLabel() | translate"
+          [attr.title]="languageToggleLabel() | translate"
+          (click)="toggleLanguage()"
+        >
+          <span class="navbar__language-toggle-circle">
+            {{ languageToggleText() }}
+          </span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>

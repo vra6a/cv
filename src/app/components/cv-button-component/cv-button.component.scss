@@ -1,0 +1,98 @@
+@use "../../styles/mixins/text";
+
+.cv-button {
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-4);
+  cursor: pointer;
+  display: inline-flex;
+  gap: var(--spacing-component-2);
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus-visible {
+    border-radius: var(--border-radius-2);
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+  }
+
+  &--small {
+    min-block-size: 2.75rem;
+    padding: var(--spacing-component-1) var(--spacing-component-3);
+    @include text.button-small;
+  }
+
+  &--large {
+    min-block-size: 3.75rem;
+    padding: var(--spacing-component-3) var(--spacing-component-7);
+    @include text.button-large;
+  }
+
+  &--primary {
+    background-color: var(--primary);
+    color: var(--background);
+  }
+
+  &--secondary {
+    background-color: var(--accent);
+    color: var(--primary);
+  }
+
+  &--outline {
+    background-color: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: var(--primary);
+    padding-inline: var(--spacing-component-2);
+  }
+
+  &--iconOnly {
+    aspect-ratio: 1;
+    padding: var(--spacing-component-3);
+  }
+}
+
+.cv-button__icon {
+  block-size: 1.25rem;
+  inline-size: 1.25rem;
+  flex: 0 0 auto;
+
+  background-color: currentColor;
+
+  mask-image: var(--button-icon-url);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  -webkit-mask-image: var(--button-icon-url);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
+.cv-button__label--visually-hidden {
+  block-size: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  inline-size: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}

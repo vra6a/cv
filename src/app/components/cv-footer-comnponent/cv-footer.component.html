@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="footer__top">
+    <button
+      class="footer__top-button"
+      type="button"
+      [attr.aria-label]="'FOOTER.A11Y.JUMP_TO_TOP' | translate"
+      [attr.title]="'FOOTER.A11Y.JUMP_TO_TOP' | translate"
+      (click)="scrollToTop()"
+    >
+      <img
+        class="footer__top-icon"
+        src="icons/arrow-up.svg"
+        alt=""
+        width="48"
+        height="48"
+        aria-hidden="true"
+      />
+    </button>
+  </div>
+
+  <div class="footer__bottom">
+    <p class="footer__copyright">
+      {{ 'FOOTER.COPYRIGHT_NOTICE' | translate: { currentYear } }}
+    </p>
+  </div>
+</footer>
